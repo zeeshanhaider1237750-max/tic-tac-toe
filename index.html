@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="head">
+      <h1 id="heading">Tic-Tac-Toe</h1>
+      <p id="sent">Let's play a game</p>
+      <form action="#">
+        <div id="p1">
+          <label for="playerOne">Player 1:</label>
+          <input
+            type="name"
+            id="playerOne"
+            placeholder="Player One"
+            name="player_One"
+          />
+        </div>
+        <div id="p2">
+          <label for="playerTwo">Player 2:</label>
+          <select id="playerTwoMode">
+            <option value="human">Human</option>
+            <option value="computer">Computer</option>
+          </select>
+          <input
+            type="name"
+            name="player_two"
+            id="playerTwo"
+            placeholder="Player Two"
+          />
+        </div>
+      </form>
+    </div>
+    <div id="body">
+      <div class="gameBoard">
+        <button class="square-cell" data-index="0"></button>
+        <button class="square-cell" data-index="1"></button>
+        <button class="square-cell" data-index="2"></button>
+        <button class="square-cell" data-index="3"></button>
+        <button class="square-cell" data-index="4"></button>
+        <button class="square-cell" data-index="5"></button>
+        <button class="square-cell" data-index="6"></button>
+        <button class="square-cell" data-index="7"></button>
+        <button class="square-cell" data-index="8"></button>
+      </div>
+    </div>
+    <div id="footer">
+      <p id="copyright">&copy; The Odin Project - (TOP) - Zeeshan Haider</p>
+    </div>
+  </body>
+</html>
