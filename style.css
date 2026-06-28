@@ -63,9 +63,6 @@ body{
    font-size: 3rem;
    font-weight: bold;
 }
-#turn-finder{
-    width: 20.3rem;
-}
 #starters{
     display: flex;
     flex-direction: row;
@@ -79,4 +76,25 @@ body{
 #turn-shower{
     width: 50%;
     text-align: left;
+}
+#game-starter:hover{
+    transition: 0.2s;
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+    cursor: pointer;
+}
+input:hover, #turn-shower:hover{
+    cursor: pointer;
+}
+.square-cell:hover{
+    cursor: pointer;
+}
+#reset{
+    width: 20.3rem;
+    margin: 0.5rem;
+}
+#reset:hover{
+    cursor: pointer;
+    transform: transalteY(-2px);
+    transition: 0.2s;
 }
