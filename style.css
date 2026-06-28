@@ -63,3 +63,20 @@ body{
    font-size: 3rem;
    font-weight: bold;
 }
+#turn-finder{
+    width: 20.3rem;
+}
+#starters{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    width: 20.3rem;
+}
+#game-starter{
+    width: 50%;
+    background-color: yellow;
+}
+#turn-shower{
+    width: 50%;
+    text-align: left;
+}
