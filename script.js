@@ -1,3 +1,4 @@
+let gamecontroller = (() => {
 const p1Name = document.querySelector("#playerOne");
 const p2Name = document.querySelector("#playerTwo");
 let TurnFinderbtn = document.querySelectorAll(".square-cell");
@@ -40,6 +41,7 @@ resetBtn.addEventListener('click', () => {
     gamestarter.style.backgroundColor = "yellow";
     moveTrackerBox.innerHTML = "Turn";
     messageDisplayer.style.backgroundColor = "";
+    messageDisplayer.style.display = "grid";
     messageDisplayer.innerHTML = `<button class="square-cell" 
     data-index="0"></button>
         <button class="square-cell" data-index="1"></button>
@@ -62,15 +64,23 @@ let checkWin = () => {
     if (a !== "" && a === b && b === c) {
       isGameActive = false;
       if (a === "O") {
-        messageDisplayer.innerHTML = `${p1Value} has won`;
+        messageDisplayer.innerHTML = `${p1Value} has won!`;
         messageDisplayer.style.backgroundColor = "blue";
         messageDisplayer.style.textAlign = "center";
-        messageDisplayer.style.fontSize = "4rem"
+        messageDisplayer.style.fontSize = "2rem"
+        messageDisplayer.style.whiteSpace = "nowrap";
+        messageDisplayer.style.display = "flex";
+        messageDisplayer.style.justifyContent = "center";
+        messageDisplayer,style.alignItems = "center";
       } else if (a === "X") {
-        messageDisplayer.innerHTML = `${p2Value} has won`;
+        messageDisplayer.innerHTML = `${p2Value} has won!`;
         messageDisplayer.style.backgroundColor = "red";
         messageDisplayer.style.textAlign = "center";
-        messageDisplayer.style.fontSize = "4rem"
+        messageDisplayer.style.fontSize = "2rem"
+        messageDisplayer.style.whiteSpace = "nowrap";
+        messageDisplayer.style.display = "flex";
+        messageDisplayer.style.justifyContent = "center";
+        messageDisplayer,style.alignItems = "center";
       }
     }
   });
@@ -78,8 +88,12 @@ let checkWin = () => {
         messageDisplayer.innerHTML = "It's a Tie. No one has won!";
         messageDisplayer.style.backgroundColor = "yellow";
         messageDisplayer.style.textAlign = "center";
-        messageDisplayer.style.fontSize = "4rem"
+        messageDisplayer.style.fontSize = "2rem"
         isGameActive = false;
+        messageDisplayer.style.whiteSpace = "nowrap";
+        messageDisplayer.style.display = "flex";
+        messageDisplayer.style.justifyContent = "center";
+        messageDisplayer,style.alignItems = "center";
   }
 };
 
@@ -116,3 +130,5 @@ TurnFinderbtn.forEach((cell) => {
 });
 }
 bindGridButtons();
+return{};
+})();
